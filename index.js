@@ -3,7 +3,7 @@ const app = express();
 
 app.use(express.json());
 
-app.get("/", (req, res) => {
+app.get("/api/whoami", (req, res) => {
   res.json({
     ip: req.ip,
     software: req.headers["user-agent"],
